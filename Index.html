@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Shop — Quality Products</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    color: #222;
+    line-height: 1.6;
+    background: #fafafa;
+  }
+  header {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 18px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  header h1 { font-size: 1.4rem; letter-spacing: 0.5px; }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.95rem;
+    opacity: 0.85;
+  }
+  nav a:hover { opacity: 1; text-decoration: underline; }
+
+  .hero {
+    text-align: center;
+    padding: 60px 24px 40px;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #fff;
+  }
+  .hero h2 { font-size: 2rem; margin-bottom: 12px; }
+  .hero p { opacity: 0.85; max-width: 600px; margin: 0 auto; }
+
+  .products {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 24px;
+  }
+  .products h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 1.6rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 24px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  }
+  .card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    background: #eee;
+  }
+  .card-body { padding: 16px; }
+  .card-body h3 { font-size: 1.05rem; margin-bottom: 6px; }
+  .card-body p { font-size: 0.9rem; color: #666; }
+
+  .contact {
+    background: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 50px 24px;
+  }
+  .contact h2 { margin-bottom: 16px; }
+  .contact p { opacity: 0.85; margin-bottom: 8px; }
+  .contact a { color: #7ec8ff; text-decoration: none; }
+  .contact a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85rem;
+    color: #888;
+    background: #fafafa;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>My Shop</h1>
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Quality Products, Delivered</h2>
+  <p>Shoes, bags, shirts, plates and more — browse our collection below.</p>
+</section>
+
+<section class="products" id="products">
+  <h2>Our Products</h2>
+  <div class="grid">
+
+    <!-- PRODUCT CARD 1 -->
+    <div class="card">
+      <img src="shoe1.jpg" alt="Running Shoe">
+      <div class="card-body">
+        <h3>Running Shoe</h3>
+        <p>Lightweight, comfortable everyday sneaker.</p>
+      </div>
+    </div>
+
+    <!-- PRODUCT CARD 2 -->
+    <div class="card">
+      <img src="bag1.jpg" alt="Leather Bag">
+      <div class="card-body">
+        <h3>Leather Bag</h3>
+        <p>Durable handbag with spacious compartments.</p>
+      </div>
+    </div>
+
+    <!-- PRODUCT CARD 3 -->
+    <div class="card">
+      <img src="shirt1.jpg" alt="Cotton Shirt">
+      <div class="card-body">
+        <h3>Cotton Shirt</h3>
+        <p>Breathable 100% cotton, available in several colors.</p>
+      </div>
+    </div>
+
+    <!-- PRODUCT CARD 4 -->
+    <div class="card">
+      <img src="plate1.jpg" alt="Ceramic Plate">
+      <div class="card-body">
+        <h3>Ceramic Plate</h3>
+        <p>Elegant dinner plate, dishwasher safe.</p>
+      </div>
+    </div>
+
+    <!-- ADD MORE CARDS HERE by copying one block above -->
+
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Get in Touch</h2>
+  <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+  <p>Phone: +123 456 7890</p>
+  <p>WhatsApp: +123 456 7890</p>
+</section>
+
+<footer>
+  &copy; 2026 My Shop. All rights reserved.
+</footer>
+
+</body>
+</html>
